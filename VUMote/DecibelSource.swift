@@ -6,15 +6,65 @@
 //  Copyright © 2020 Christoph Parstorfer. All rights reserved.
 //
 
-import Foundation
+import AVFoundation
+import Accelerate
 
 class DecibelSource: ObservableObject {
-    @Published var decibels: Float = 1.0
+    @Published var decibels: Float = -120.0
+    @Published var peak: Float = -120.0
+    
+//    private let audioEngine = AVAudioEngine()
     
     init() {
-        Timer.scheduledTimer(withTimeInterval: 1/15, repeats: true) { _ in
-            // TODO Sensor data
-            self.decibels = .random(in: 0.0...1.0)
+        switch AVCaptureDevice.authorizationStatus(for: .audio) {
+            case .authorized: // The user has previously granted access to the camera.
+                self.setupCaptureSession()
+            
+            case .notDetermined: // The user has not yet been asked for camera access.
+                AVCaptureDevice.requestAccess(for: .audio) { granted in
+                    if granted {
+                        self.setupCaptureSession()
+                    }
+                }
+            
+            case .denied: // The user has previously denied access.
+                return
+
+            case .restricted: // The user can't grant access due to restrictions.
+                return
+        }
+    }
+    
+    func setupCaptureSession() {
+        do {
+            let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setCategory(.playAndRecord, mode: .measurement, options: .mixWithOthers)
+            try audioSession.setActive(true)
+            let captureSession = AVCaptureSession()
+            captureSession.addInput(try! AVCaptureDeviceInput(device: AVCaptureDevice.default(for: .audio)!))
+            let output = AVCaptureAudioDataOutput()
+            captureSession.addOutput(output)
+            captureSession.startRunning()
+            
+            // Update decibels quickly
+            Timer.scheduledTimer(withTimeInterval: 1/15, repeats: true) { _ in
+                DispatchQueue.main.async {
+                    let audioChannel = captureSession.connections[0].audioChannels.first!
+                    self.decibels = audioChannel.averagePowerLevel
+                }
+            }
+            // Update peak level more slowly
+            Timer.scheduledTimer(withTimeInterval: 1/4, repeats: true) { _ in
+                DispatchQueue.main.async {
+                    let audioChannel = captureSession.connections[0].audioChannels.first!
+                    self.peak = audioChannel.peakHoldLevel
+                }
+            }
+            
+        } catch {
+            // no live VU for you
+            print(error)
+            return
         }
     }
 }
