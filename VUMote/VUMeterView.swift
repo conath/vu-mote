@@ -11,15 +11,31 @@ import SwiftUI
 struct VUMeterView: View {
     @EnvironmentObject private var decibelSource: DecibelSource
     
-    @State var colorOk = Color("Ok")
-    @State var colorHot = Color("Hot")
-    private var colors: [Color] {
-        [colorOk, colorHot]
+    /// Change scale to -60dB to 0dB (more practical in most cases); Full scale is -120dB to 0dB
+    @Binding var isHalfScale: Bool
+    
+    init() {
+        _isHalfScale = .constant(true)
     }
-    private var minDb: Float = -60
+    
+    init(isHalfScale: Binding<Bool>) {
+        self._isHalfScale = isHalfScale
+    }
+    
+    private var halfScaleColors: [Color] {
+        [Color("Ok"), Color("SemiHot"), Color("Hot")]
+    }
+    private var fullScaleColors: [Color] {
+        [Color("Cold"), Color("Ok"), Color("Hot")]
+    }
+    
+    private var minDb: Float {
+        isHalfScale ? -60 : -120
+    }
     
     var body: some View {
-        let gradient = LinearGradient(gradient: Gradient(colors: colors), startPoint: .center, endPoint: .top)
+        let colors = isHalfScale ? halfScaleColors : fullScaleColors
+        let gradient = LinearGradient(gradient: Gradient(colors: colors), startPoint: .bottom, endPoint: .top)
 
         return GeometryReader { geo in
             ZStack {

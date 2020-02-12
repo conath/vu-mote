@@ -9,18 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isEnabled = true
+    @State var isHalfScale = true
     
     var body: some View {
         ZStack {
             BackgroundView()
             VStack {
-                VUMeterView()
+                VUMeterView(isHalfScale: $isHalfScale)
                     .frame(width: 50.0, height: 300.0)
-                    .opacity(isEnabled ? 1.0 : 0.0)
 
-                NiceToggle(isEnabled: $isEnabled)
+                NiceToggle(isEnabled: $isHalfScale)
                     .padding()
+                
+                Text(isHalfScale ? "Scale:  -60dB to 0dB" : "Scale: -120dB to 0dB")
+                    .font(.system(.caption, design: .monospaced))
+                    .foregroundColor(Color(UIColor.lightText))
             }
         }
     }
