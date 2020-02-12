@@ -40,7 +40,7 @@ struct NiceToggle: View {
             .onTapGesture {
                 self.isEnabled.toggle()
             }
-            .animation(.easeInOut)
+        .animation(.easeInOut(duration: 0.15))
     }
 }
 
