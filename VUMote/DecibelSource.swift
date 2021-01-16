@@ -13,7 +13,7 @@ class DecibelSource: ObservableObject {
     @Published var decibels: Float = -120.0
     @Published var peak: Float = -120.0
     
-    var decibelUpdateRate: TimeInterval = 1/15
+    var decibelUpdateRate: TimeInterval = 1/30
     var peakUpdateRate: TimeInterval = 1/4
     
     init() {

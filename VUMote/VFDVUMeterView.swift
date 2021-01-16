@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct VUMeterView: View {
+struct VFDVUMeterView: View {
     @EnvironmentObject private var decibelSource: DecibelSource
     
     /// Change scale to -60dB to 0dB (more practical in most cases); Full scale is -120dB to 0dB
@@ -81,8 +81,8 @@ struct VUMeterView: View {
     }
 }
 
-struct VUMeterView_Previews: PreviewProvider {
+struct VFDVUMeterView_Previews: PreviewProvider {
     static var previews: some View {
-        VUMeterView()
+        VFDVUMeterView()
     }
 }
