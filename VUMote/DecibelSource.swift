@@ -21,7 +21,7 @@ class DecibelSource: ObservableObject {
         case .authorized: // The user has previously granted access to the camera.
             self.setupCaptureSession()
         
-        case .notDetermined: // The user has not yet been asked for camera access.
+        case .notDetermined: // The user has not yet been asked for microphone access.
             AVCaptureDevice.requestAccess(for: .audio) { granted in
                 if granted {
                     self.setupCaptureSession()

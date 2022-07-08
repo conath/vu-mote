@@ -13,6 +13,7 @@ internal enum VUMeterStyle: Int {
 }
 
 struct ContentView: View {
+    /// Change scale to -60dB to 0dB (more practical in most cases); Full scale is -120dB to 0dB
     @State var isHalfScale = true
     @State var vuMeterStyle: VUMeterStyle = .Needle
     @State var selected: Int = VUMeterStyle.Needle.rawValue

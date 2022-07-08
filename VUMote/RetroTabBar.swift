@@ -37,9 +37,6 @@ struct RetroTabBar: View {
                         .onLongPressGesture(minimumDuration: 0, maximumDistance: 40, pressing: { _ in }, perform: {
                             selectItem(id)
                         })
-//                        .onTapGesture() {
-//                            selectItem(id)
-//                        }
                     )
                 }
             }

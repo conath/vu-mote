@@ -69,7 +69,7 @@ struct VFDVUMeterView: View {
                     mutablePath.addLine(to:
                         CGPoint(x: geo.size.width/2,
                                 y: CGFloat(
-                                    steppedYValue - 10.0 // move up to draw just one dash
+                                    steppedYValue - 10.0 // move up by 10pt to draw just one dash
                                 )
                         )
                     )
