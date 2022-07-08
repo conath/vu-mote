@@ -37,7 +37,6 @@
 		8361DA3723F3546A0044EE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8361DA3D23F354BA0044EE61 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		8361DA3F23F35A240044EE61 /* VFDVUMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFDVUMeterView.swift; sourceTree = "<group>"; };
-		8372FFD72878E524001D1590 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83A2BFA42564758A003E7F2E /* NeedleVUMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleVUMeterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +84,6 @@
 				834921EA23F363DE004581EF /* DecibelSource.swift */,
 				834921EC23F37389004581EF /* NiceToggle.swift */,
 				834921E823F36121004581EF /* SwiftUITweaks.swift */,
-				8372FFD72878E524001D1590 /* README.md */,
 			);
 			path = VUMote;
 			sourceTree = "<group>";
