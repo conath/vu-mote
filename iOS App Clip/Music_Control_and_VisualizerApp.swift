@@ -13,6 +13,7 @@ struct Music_Control_and_VisualizerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(DecibelSource())
         }
     }
 }

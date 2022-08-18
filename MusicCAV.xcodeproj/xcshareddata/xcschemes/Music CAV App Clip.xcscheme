@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83F2B19C28AEB90C004742E6"
-               BuildableName = "Music Control and Visualizer.app"
-               BlueprintName = "Music Control and Visualizer"
+               BuildableName = "MusicCAV App Clip.app"
+               BlueprintName = "MusicCAV App Clip"
                ReferencedContainer = "container:MusicCAV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83F2B19C28AEB90C004742E6"
-            BuildableName = "Music Control and Visualizer.app"
-            BlueprintName = "Music Control and Visualizer"
+            BuildableName = "MusicCAV App Clip.app"
+            BlueprintName = "MusicCAV App Clip"
             ReferencedContainer = "container:MusicCAV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -69,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83F2B19C28AEB90C004742E6"
-            BuildableName = "Music Control and Visualizer.app"
-            BlueprintName = "Music Control and Visualizer"
+            BuildableName = "MusicCAV App Clip.app"
+            BlueprintName = "MusicCAV App Clip"
             ReferencedContainer = "container:MusicCAV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

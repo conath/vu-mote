@@ -9,9 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    // test
+    @EnvironmentObject private var decibelSource: DecibelSource
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            BackgroundView()
+            VStack() {
+                Spacer()
+                
+                VFDVUMeterView(isHalfScale: .constant(true))
+                    .frame(width: 50.0, height: 300.0)
+                    .transition(.identity)
+                
+                Spacer()
+            }
+        }
     }
 }
 

@@ -47,20 +47,27 @@ class DecibelSource: ObservableObject {
             captureSession.addInput(try! AVCaptureDeviceInput(device: AVCaptureDevice.default(for: .audio)!))
             let output = AVCaptureAudioDataOutput()
             captureSession.addOutput(output)
-            captureSession.startRunning()
             
-            // Update decibels quickly
-            Timer.scheduledTimer(withTimeInterval: self.decibelUpdateRate, repeats: true) { _ in
+            DispatchQueue.global(qos: .userInitiated).async {
+                /// this triggers mic access prompt, if not granted
+                /// blocks until access was granted
+                captureSession.startRunning()
+                /// now start updating decibels
                 DispatchQueue.main.async {
-                    let audioChannel = captureSession.connections[0].audioChannels.first!
-                    self.decibels = audioChannel.averagePowerLevel
-                }
-            }
-            // Update peak level more slowly
-            Timer.scheduledTimer(withTimeInterval: self.peakUpdateRate, repeats: true) { _ in
-                DispatchQueue.main.async {
-                    let audioChannel = captureSession.connections[0].audioChannels.first!
-                    self.peak = audioChannel.peakHoldLevel
+                    /// Update decibels quickly
+                    Timer.scheduledTimer(withTimeInterval: self.decibelUpdateRate, repeats: true) { _ in
+                        DispatchQueue.main.async {
+                            let audioChannel = captureSession.connections[0].audioChannels.first!
+                            self.decibels = audioChannel.averagePowerLevel
+                        }
+                    }
+                    /// Update peak level more slowly
+                    Timer.scheduledTimer(withTimeInterval: self.peakUpdateRate, repeats: true) { _ in
+                        DispatchQueue.main.async {
+                            let audioChannel = captureSession.connections[0].audioChannels.first!
+                            self.peak = audioChannel.peakHoldLevel
+                        }
+                    }
                 }
             }
             

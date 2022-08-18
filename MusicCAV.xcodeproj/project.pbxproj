@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830B5B0E28AEBB4B0035FACB /* DecibelSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834921EA23F363DE004581EF /* DecibelSource.swift */; };
+		830B5B0F28AEBB4B0035FACB /* VFDVUMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361DA3F23F35A240044EE61 /* VFDVUMeterView.swift */; };
+		830B5B1028AEBB4B0035FACB /* NeedleVUMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2BFA42564758A003E7F2E /* NeedleVUMeterView.swift */; };
+		830B5B1128AEBCBF0035FACB /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361DA3D23F354BA0044EE61 /* BackgroundView.swift */; };
 		834921E923F36121004581EF /* SwiftUITweaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834921E823F36121004581EF /* SwiftUITweaks.swift */; };
 		834921EB23F363DE004581EF /* DecibelSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834921EA23F363DE004581EF /* DecibelSource.swift */; };
 		834921ED23F37389004581EF /* NiceToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834921EC23F37389004581EF /* NiceToggle.swift */; };
@@ -24,7 +28,7 @@
 		83F2B1A228AEB90C004742E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2B1A128AEB90C004742E6 /* ContentView.swift */; };
 		83F2B1A428AEB90C004742E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F2B1A328AEB90C004742E6 /* Assets.xcassets */; };
 		83F2B1A728AEB90C004742E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F2B1A628AEB90C004742E6 /* Preview Assets.xcassets */; };
-		83F2B1AC28AEB90C004742E6 /* Music Control and Visualizer.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 83F2B19D28AEB90C004742E6 /* Music Control and Visualizer.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83F2B1AC28AEB90C004742E6 /* MusicCAV App Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 83F2B19D28AEB90C004742E6 /* MusicCAV App Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +48,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
 			dstSubfolderSpec = 16;
 			files = (
-				83F2B1AC28AEB90C004742E6 /* Music Control and Visualizer.app in Embed App Clips */,
+				83F2B1AC28AEB90C004742E6 /* MusicCAV App Clip.app in Embed App Clips */,
 			);
 			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +60,7 @@
 		834921EA23F363DE004581EF /* DecibelSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecibelSource.swift; sourceTree = "<group>"; };
 		834921EC23F37389004581EF /* NiceToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceToggle.swift; sourceTree = "<group>"; };
 		835E3E4A25B3553A001D5285 /* RetroTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroTabBar.swift; sourceTree = "<group>"; };
-		8361DA2623F354680044EE61 /* MusicCAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicCAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8361DA2623F354680044EE61 /* MusicCAV iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicCAV iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8361DA2923F354690044EE61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8361DA2B23F354690044EE61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8361DA2D23F354690044EE61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,7 +71,7 @@
 		8361DA3D23F354BA0044EE61 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		8361DA3F23F35A240044EE61 /* VFDVUMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFDVUMeterView.swift; sourceTree = "<group>"; };
 		83A2BFA42564758A003E7F2E /* NeedleVUMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleVUMeterView.swift; sourceTree = "<group>"; };
-		83F2B19D28AEB90C004742E6 /* Music Control and Visualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Control and Visualizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F2B19D28AEB90C004742E6 /* MusicCAV App Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicCAV App Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F2B19F28AEB90C004742E6 /* Music_Control_and_VisualizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_Control_and_VisualizerApp.swift; sourceTree = "<group>"; };
 		83F2B1A128AEB90C004742E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83F2B1A328AEB90C004742E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,7 +101,10 @@
 		830B5B0D28AEB9E40035FACB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8361DA3D23F354BA0044EE61 /* BackgroundView.swift */,
 				834921EA23F363DE004581EF /* DecibelSource.swift */,
+				8361DA3F23F35A240044EE61 /* VFDVUMeterView.swift */,
+				83A2BFA42564758A003E7F2E /* NeedleVUMeterView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -115,8 +122,8 @@
 		8361DA2723F354680044EE61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8361DA2623F354680044EE61 /* MusicCAV.app */,
-				83F2B19D28AEB90C004742E6 /* Music Control and Visualizer.app */,
+				8361DA2623F354680044EE61 /* MusicCAV iOS App.app */,
+				83F2B19D28AEB90C004742E6 /* MusicCAV App Clip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,9 +139,6 @@
 				8361DA3423F3546A0044EE61 /* LaunchScreen.storyboard */,
 				8361DA3723F3546A0044EE61 /* Info.plist */,
 				8361DA3123F3546A0044EE61 /* Preview Content */,
-				8361DA3D23F354BA0044EE61 /* BackgroundView.swift */,
-				8361DA3F23F35A240044EE61 /* VFDVUMeterView.swift */,
-				83A2BFA42564758A003E7F2E /* NeedleVUMeterView.swift */,
 				834921EC23F37389004581EF /* NiceToggle.swift */,
 				834921E823F36121004581EF /* SwiftUITweaks.swift */,
 			);
@@ -173,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8361DA2523F354680044EE61 /* MusicCAV */ = {
+		8361DA2523F354680044EE61 /* MusicCAV iOS App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8361DA3A23F3546A0044EE61 /* Build configuration list for PBXNativeTarget "MusicCAV" */;
+			buildConfigurationList = 8361DA3A23F3546A0044EE61 /* Build configuration list for PBXNativeTarget "MusicCAV iOS App" */;
 			buildPhases = (
 				8361DA2223F354680044EE61 /* Sources */,
 				8361DA2323F354680044EE61 /* Frameworks */,
@@ -187,14 +191,14 @@
 			dependencies = (
 				83F2B1AB28AEB90C004742E6 /* PBXTargetDependency */,
 			);
-			name = MusicCAV;
+			name = "MusicCAV iOS App";
 			productName = VUMote;
-			productReference = 8361DA2623F354680044EE61 /* MusicCAV.app */;
+			productReference = 8361DA2623F354680044EE61 /* MusicCAV iOS App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		83F2B19C28AEB90C004742E6 /* Music Control and Visualizer */ = {
+		83F2B19C28AEB90C004742E6 /* MusicCAV App Clip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83F2B1AD28AEB90C004742E6 /* Build configuration list for PBXNativeTarget "Music Control and Visualizer" */;
+			buildConfigurationList = 83F2B1AD28AEB90C004742E6 /* Build configuration list for PBXNativeTarget "MusicCAV App Clip" */;
 			buildPhases = (
 				83F2B19928AEB90C004742E6 /* Sources */,
 				83F2B19A28AEB90C004742E6 /* Frameworks */,
@@ -204,9 +208,9 @@
 			);
 			dependencies = (
 			);
-			name = "Music Control and Visualizer";
+			name = "MusicCAV App Clip";
 			productName = "Music Control and Visualizer";
-			productReference = 83F2B19D28AEB90C004742E6 /* Music Control and Visualizer.app */;
+			productReference = 83F2B19D28AEB90C004742E6 /* MusicCAV App Clip.app */;
 			productType = "com.apple.product-type.application.on-demand-install-capable";
 		};
 /* End PBXNativeTarget section */
@@ -240,8 +244,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8361DA2523F354680044EE61 /* MusicCAV */,
-				83F2B19C28AEB90C004742E6 /* Music Control and Visualizer */,
+				8361DA2523F354680044EE61 /* MusicCAV iOS App */,
+				83F2B19C28AEB90C004742E6 /* MusicCAV App Clip */,
 			);
 		};
 /* End PBXProject section */
@@ -290,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830B5B1128AEBCBF0035FACB /* BackgroundView.swift in Sources */,
 				83F2B1A228AEB90C004742E6 /* ContentView.swift in Sources */,
 				83F2B1A028AEB90C004742E6 /* Music_Control_and_VisualizerApp.swift in Sources */,
+				830B5B0F28AEBB4B0035FACB /* VFDVUMeterView.swift in Sources */,
+				830B5B1028AEBB4B0035FACB /* NeedleVUMeterView.swift in Sources */,
+				830B5B0E28AEBB4B0035FACB /* DecibelSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +308,7 @@
 /* Begin PBXTargetDependency section */
 		83F2B1AB28AEB90C004742E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 83F2B19C28AEB90C004742E6 /* Music Control and Visualizer */;
+			target = 83F2B19C28AEB90C004742E6 /* MusicCAV App Clip */;
 			targetProxy = 83F2B1AA28AEB90C004742E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -439,10 +447,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"VUMote/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS App/Preview Content\"";
 				DEVELOPMENT_TEAM = U96PJYMZWW;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = VUMote/Info.plist;
+				INFOPLIST_FILE = "iOS App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cafe.chrisp.musicrav;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,10 +469,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"VUMote/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS App/Preview Content\"";
 				DEVELOPMENT_TEAM = U96PJYMZWW;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = VUMote/Info.plist;
+				INFOPLIST_FILE = "iOS App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,7 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cafe.chrisp.musicrav;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -481,15 +491,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = "Music Control and Visualizer/Music_Control_and_Visualizer.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iOS App Clip/Music_Control_and_Visualizer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Music Control and Visualizer/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS App Clip/Preview Content\"";
 				DEVELOPMENT_TEAM = U96PJYMZWW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Music Control and Visualizer/Info.plist";
+				INFOPLIST_FILE = "iOS App Clip/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = VUMote;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is not used. This is a placeholder text to make App Store Connect happy.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needed to show VU display of ambient noise level.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -505,7 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -515,15 +527,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = "Music Control and Visualizer/Music_Control_and_Visualizer.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iOS App Clip/Music_Control_and_Visualizer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Music Control and Visualizer/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS App Clip/Preview Content\"";
 				DEVELOPMENT_TEAM = U96PJYMZWW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Music Control and Visualizer/Info.plist";
+				INFOPLIST_FILE = "iOS App Clip/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = VUMote;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is not used. This is a placeholder text to make App Store Connect happy.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needed to show VU display of ambient noise level.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -539,7 +553,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -555,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8361DA3A23F3546A0044EE61 /* Build configuration list for PBXNativeTarget "MusicCAV" */ = {
+		8361DA3A23F3546A0044EE61 /* Build configuration list for PBXNativeTarget "MusicCAV iOS App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8361DA3B23F3546A0044EE61 /* Debug */,
@@ -564,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83F2B1AD28AEB90C004742E6 /* Build configuration list for PBXNativeTarget "Music Control and Visualizer" */ = {
+		83F2B1AD28AEB90C004742E6 /* Build configuration list for PBXNativeTarget "MusicCAV App Clip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83F2B1AE28AEB90C004742E6 /* Debug */,

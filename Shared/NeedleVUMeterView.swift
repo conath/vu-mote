@@ -54,7 +54,7 @@ struct NeedleVUMeterView: View {
                             degreesFrom(decibels: decibelSource.decibels)
                         )
                     )
-                    .animation(Animation.easeInOut(duration: 1/5))
+                    .animation(.easeInOut(duration: 1/5), value: decibelSource.decibels)
                 Circle()
                     .fill(Color.black)
                     .frame(width: geo.size.width * 0.08)

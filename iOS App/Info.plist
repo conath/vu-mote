@@ -19,9 +19,11 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera is not used. This is a placeholder text to make App Store Connect happy.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Needed to show VU display of ambient noise level.</string>
 	<key>UIApplicationSceneManifest</key>
