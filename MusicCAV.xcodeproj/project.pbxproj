@@ -94,11 +94,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		830B5B0D28AEB9E40035FACB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				834921EA23F363DE004581EF /* DecibelSource.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		8361DA1D23F354680044EE61 = {
 			isa = PBXGroup;
 			children = (
-				8361DA2823F354680044EE61 /* VUMote */,
-				83F2B19E28AEB90C004742E6 /* Music Control and Visualizer */,
+				830B5B0D28AEB9E40035FACB /* Shared */,
+				8361DA2823F354680044EE61 /* iOS App */,
+				83F2B19E28AEB90C004742E6 /* iOS App Clip */,
 				8361DA2723F354680044EE61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,7 +121,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8361DA2823F354680044EE61 /* VUMote */ = {
+		8361DA2823F354680044EE61 /* iOS App */ = {
 			isa = PBXGroup;
 			children = (
 				8361DA2923F354690044EE61 /* AppDelegate.swift */,
@@ -126,11 +135,10 @@
 				8361DA3D23F354BA0044EE61 /* BackgroundView.swift */,
 				8361DA3F23F35A240044EE61 /* VFDVUMeterView.swift */,
 				83A2BFA42564758A003E7F2E /* NeedleVUMeterView.swift */,
-				834921EA23F363DE004581EF /* DecibelSource.swift */,
 				834921EC23F37389004581EF /* NiceToggle.swift */,
 				834921E823F36121004581EF /* SwiftUITweaks.swift */,
 			);
-			path = VUMote;
+			path = "iOS App";
 			sourceTree = "<group>";
 		};
 		8361DA3123F3546A0044EE61 /* Preview Content */ = {
@@ -141,7 +149,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		83F2B19E28AEB90C004742E6 /* Music Control and Visualizer */ = {
+		83F2B19E28AEB90C004742E6 /* iOS App Clip */ = {
 			isa = PBXGroup;
 			children = (
 				83F2B19F28AEB90C004742E6 /* Music_Control_and_VisualizerApp.swift */,
@@ -151,7 +159,7 @@
 				83F2B1A928AEB90C004742E6 /* Music_Control_and_Visualizer.entitlements */,
 				83F2B1A528AEB90C004742E6 /* Preview Content */,
 			);
-			path = "Music Control and Visualizer";
+			path = "iOS App Clip";
 			sourceTree = "<group>";
 		};
 		83F2B1A528AEB90C004742E6 /* Preview Content */ = {
