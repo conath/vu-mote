@@ -9,7 +9,7 @@
 import SwiftUI
 
 internal enum VUMeterStyle: Int {
-    case VFD, Needle
+    case VFD, Needle, Wave
 }
 
 struct ContentView: View {
@@ -36,6 +36,10 @@ struct ContentView: View {
                 case VUMeterStyle.Needle.rawValue:
                     NeedleVUMeterView(isHalfScale: $isHalfScale)
                         .transition(.identity)
+                case VUMeterStyle.Wave.rawValue:
+                    WaveFormView(isHalfScale: $isHalfScale)
+                        .aspectRatio(1, contentMode: .fit)
+                        .transition(.identity)
                 default:
                     fatalError()
                 }
@@ -43,7 +47,7 @@ struct ContentView: View {
                 Spacer()
                 
                 RetroTabBar(selection: $selected,
-                            images: [UIImage(systemName: "line.horizontal.3")!, UIImage(systemName: "dial.max")!],
+                            images: [UIImage(systemName: "line.horizontal.3")!, UIImage(systemName: "dial.max")!, UIImage(systemName: "waveform.path")!],
                             selectItem: { (item) in
                     if let style = VUMeterStyle(rawValue: item) {
                         withAnimation {

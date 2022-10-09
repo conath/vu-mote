@@ -12,8 +12,9 @@ import Accelerate
 class DecibelSource: ObservableObject {
     @Published var decibels: Float = -120.0
     @Published var peak: Float = -120.0
+    @Published var samples: [Float] = [Float].init(repeating: -120.0, count: 1024)
     
-    var decibelUpdateRate: TimeInterval = 1/30
+    var decibelUpdateRate: TimeInterval = 1/60
     var peakUpdateRate: TimeInterval = 1/4
     
     init() {
@@ -44,7 +45,11 @@ class DecibelSource: ObservableObject {
             try audioSession.setCategory(.playAndRecord, mode: .measurement, options: .mixWithOthers)
             try audioSession.setActive(true)
             let captureSession = AVCaptureSession()
-            captureSession.addInput(try! AVCaptureDeviceInput(device: AVCaptureDevice.default(for: .audio)!))
+            guard let audioInputDevice = AVCaptureDevice.default(for: .audio) else {
+                print("No audio input device!")
+                return
+            }
+            captureSession.addInput(try! AVCaptureDeviceInput(device: audioInputDevice))
             let output = AVCaptureAudioDataOutput()
             captureSession.addOutput(output)
             
@@ -59,6 +64,8 @@ class DecibelSource: ObservableObject {
                         DispatchQueue.main.async {
                             let audioChannel = captureSession.connections[0].audioChannels.first!
                             self.decibels = audioChannel.averagePowerLevel
+                            self.samples.removeFirst()
+                            self.samples.append(audioChannel.averagePowerLevel)
                         }
                     }
                     /// Update peak level more slowly

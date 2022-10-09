@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,10 @@
 		8361DA3E23F354BA0044EE61 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361DA3D23F354BA0044EE61 /* BackgroundView.swift */; };
 		8361DA4023F35A240044EE61 /* VFDVUMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361DA3F23F35A240044EE61 /* VFDVUMeterView.swift */; };
 		83A2BFA52564758A003E7F2E /* NeedleVUMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2BFA42564758A003E7F2E /* NeedleVUMeterView.swift */; };
+		83C647CC28F3685A00D77419 /* Waveform in Frameworks */ = {isa = PBXBuildFile; productRef = 83C647CB28F3685A00D77419 /* Waveform */; };
+		83C647CE28F3686200D77419 /* Waveform in Frameworks */ = {isa = PBXBuildFile; productRef = 83C647CD28F3686200D77419 /* Waveform */; };
+		83DA16C228F08C49003BBD57 /* WaveFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA16C128F08C49003BBD57 /* WaveFormView.swift */; };
+		83DA16C328F08C49003BBD57 /* WaveFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA16C128F08C49003BBD57 /* WaveFormView.swift */; };
 		83F2B1A028AEB90C004742E6 /* Music_Control_and_VisualizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2B19F28AEB90C004742E6 /* Music_Control_and_VisualizerApp.swift */; };
 		83F2B1A228AEB90C004742E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2B1A128AEB90C004742E6 /* ContentView.swift */; };
 		83F2B1A428AEB90C004742E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F2B1A328AEB90C004742E6 /* Assets.xcassets */; };
@@ -71,6 +75,7 @@
 		8361DA3D23F354BA0044EE61 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		8361DA3F23F35A240044EE61 /* VFDVUMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFDVUMeterView.swift; sourceTree = "<group>"; };
 		83A2BFA42564758A003E7F2E /* NeedleVUMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleVUMeterView.swift; sourceTree = "<group>"; };
+		83DA16C128F08C49003BBD57 /* WaveFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveFormView.swift; sourceTree = "<group>"; };
 		83F2B19D28AEB90C004742E6 /* MusicCAV App Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicCAV App Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F2B19F28AEB90C004742E6 /* Music_Control_and_VisualizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_Control_and_VisualizerApp.swift; sourceTree = "<group>"; };
 		83F2B1A128AEB90C004742E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C647CC28F3685A00D77419 /* Waveform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C647CE28F3686200D77419 /* Waveform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +112,7 @@
 				834921EA23F363DE004581EF /* DecibelSource.swift */,
 				8361DA3F23F35A240044EE61 /* VFDVUMeterView.swift */,
 				83A2BFA42564758A003E7F2E /* NeedleVUMeterView.swift */,
+				83DA16C128F08C49003BBD57 /* WaveFormView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 				8361DA2823F354680044EE61 /* iOS App */,
 				83F2B19E28AEB90C004742E6 /* iOS App Clip */,
 				8361DA2723F354680044EE61 /* Products */,
+				83DA16BE28F08AF6003BBD57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +160,13 @@
 				8361DA3223F3546A0044EE61 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83DA16BE28F08AF6003BBD57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		83F2B19E28AEB90C004742E6 /* iOS App Clip */ = {
@@ -192,6 +208,9 @@
 				83F2B1AB28AEB90C004742E6 /* PBXTargetDependency */,
 			);
 			name = "MusicCAV iOS App";
+			packageProductDependencies = (
+				83C647CB28F3685A00D77419 /* Waveform */,
+			);
 			productName = VUMote;
 			productReference = 8361DA2623F354680044EE61 /* MusicCAV iOS App.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +228,9 @@
 			dependencies = (
 			);
 			name = "MusicCAV App Clip";
+			packageProductDependencies = (
+				83C647CD28F3686200D77419 /* Waveform */,
+			);
 			productName = "Music Control and Visualizer";
 			productReference = 83F2B19D28AEB90C004742E6 /* MusicCAV App Clip.app */;
 			productType = "com.apple.product-type.application.on-demand-install-capable";
@@ -219,6 +241,7 @@
 		8361DA1E23F354680044EE61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Christoph Parstorfer";
@@ -240,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 8361DA1D23F354680044EE61;
+			packageReferences = (
+				83C647CA28F3685A00D77419 /* XCRemoteSwiftPackageReference "Waveform" */,
+			);
 			productRefGroup = 8361DA2723F354680044EE61 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -278,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				834921E923F36121004581EF /* SwiftUITweaks.swift in Sources */,
+				83DA16C228F08C49003BBD57 /* WaveFormView.swift in Sources */,
 				834921EB23F363DE004581EF /* DecibelSource.swift in Sources */,
 				835E3E4B25B3553A001D5285 /* RetroTabBar.swift in Sources */,
 				8361DA2A23F354690044EE61 /* AppDelegate.swift in Sources */,
@@ -296,6 +323,7 @@
 			files = (
 				830B5B1128AEBCBF0035FACB /* BackgroundView.swift in Sources */,
 				83F2B1A228AEB90C004742E6 /* ContentView.swift in Sources */,
+				83DA16C328F08C49003BBD57 /* WaveFormView.swift in Sources */,
 				83F2B1A028AEB90C004742E6 /* Music_Control_and_VisualizerApp.swift in Sources */,
 				830B5B0F28AEBB4B0035FACB /* VFDVUMeterView.swift in Sources */,
 				830B5B1028AEBB4B0035FACB /* NeedleVUMeterView.swift in Sources */,
@@ -588,6 +616,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83C647CA28F3685A00D77419 /* XCRemoteSwiftPackageReference "Waveform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/conath/Waveform.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83C647CB28F3685A00D77419 /* Waveform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83C647CA28F3685A00D77419 /* XCRemoteSwiftPackageReference "Waveform" */;
+			productName = Waveform;
+		};
+		83C647CD28F3686200D77419 /* Waveform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83C647CA28F3685A00D77419 /* XCRemoteSwiftPackageReference "Waveform" */;
+			productName = Waveform;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8361DA1E23F354680044EE61 /* Project object */;
 }
